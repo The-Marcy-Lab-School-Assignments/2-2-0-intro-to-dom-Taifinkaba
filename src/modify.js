@@ -19,7 +19,12 @@ const getAllMainText = () => {
 getAllMainText();
 
 const setSubtitleText = () => {
+  const sub = document.getElementById("subtitle");
+  if(sub){
+    sub.textContent = "This is a subtitle!";
+  }
 };
+setSubtitleText();
 
 const modifyDivClassList = () => {
 };
