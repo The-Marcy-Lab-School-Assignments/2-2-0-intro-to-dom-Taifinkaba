@@ -5,7 +5,18 @@ const getMainHeadingText = () => {
 getMainHeadingText();
 
 const getAllMainText = () => {
+  const mainText = document.querySelectorAll(".main-text");
+  let strText = "";
+
+  for (let i = 0; i < mainText.length; i++) {
+    strText += mainText[i].textContent;
+    if (i < mainText.length - 1) {
+      strText += ",";
+    }
+  }
+  console.log(strText);
 };
+getAllMainText();
 
 const setSubtitleText = () => {
 };
