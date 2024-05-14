@@ -52,7 +52,16 @@ const removeOldInfo = () => {
 removeOldInfo();
 
 const makeAlphabet = () => {
+  const letters = document.getElementById("alphabet");
+  const num = parseInt(letters.dataset.numLetters);
+  for (let i = 0; i < num; i++) {
+    const item = document.createElement("li");
+    const character = String.fromCharCode(65 + i);
+    item.textContent = `${character} is letter #${i + 1} in the alphabet`;
+    letters.appendChild(item);
+  } 
 };
+makeAlphabet();
 
 const makeBio = () => {
 };
