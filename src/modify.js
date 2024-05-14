@@ -27,7 +27,13 @@ const setSubtitleText = () => {
 setSubtitleText();
 
 const modifyDivClassList = () => {
+  const removeAdd = document.getElementById("modify-classes");
+  if(removeAdd){
+    removeAdd.classList.add("new-class");
+    removeAdd.classList.remove("bad-class");
+  }
 };
+modifyDivClassList();
 
 const addH2 = () => {
 };
