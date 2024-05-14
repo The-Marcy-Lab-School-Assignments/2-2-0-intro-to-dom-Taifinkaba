@@ -44,7 +44,12 @@ const addH2 = () => {
 addH2();
 
 const removeOldInfo = () => {
+  const oldElement = document.getElementById("old-info")
+  if (oldElement) {
+    oldElement.remove();
+  }
 };
+removeOldInfo();
 
 const makeAlphabet = () => {
 };
