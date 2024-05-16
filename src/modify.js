@@ -50,7 +50,7 @@ const removeOldInfo = () => {
   }
 };
 removeOldInfo();
-
+/** FEEDBACK: You are really close! Instead of using fromCharSet, you could also initialize a string with the alphabet and use that as your indexes! */
 const makeAlphabet = () => {
   const letters = document.getElementById("alphabet");
   const num = parseInt(letters.dataset.numLetters);
@@ -63,6 +63,7 @@ const makeAlphabet = () => {
 };
 makeAlphabet();
 
+/** FEEDBACK: Attempt this question! It basically requires you to use .innerHTML! And make sure that the HTML matches the one given, including the spacing and indentation! */
 const makeBio = () => {
 
 };
